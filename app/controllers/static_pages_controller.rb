@@ -2,9 +2,9 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def help
+  def movies
   end
-  
+
   def contact
   end
 end
