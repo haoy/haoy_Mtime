@@ -6,8 +6,6 @@
       <change type="DELETED" beforePath="C:\Sites\18642\Task_two\haoy_Mtime\app\assets\images\ͼƬ�ߴ�.docx" afterPath="" />
       <change type="DELETED" beforePath="C:\Sites\18642\Task_two\haoy_Mtime\app\controllers\.static_pages_controller.rb.swp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/movies.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/movies.erb" />
     </list>
     <ignored path="sample_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +27,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="7" selection-start="260" selection-end="260" vertical-scroll-proportion="0.31347963">
+            <state line="16" column="76" selection-start="420" selection-end="420" vertical-scroll-proportion="0.62695926">
               <folding />
             </state>
           </provider>
@@ -757,7 +755,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="7" selection-start="260" selection-end="260" vertical-scroll-proportion="0.31347963">
+        <state line="16" column="76" selection-start="420" selection-end="420" vertical-scroll-proportion="0.62695926">
           <folding />
         </state>
       </provider>
