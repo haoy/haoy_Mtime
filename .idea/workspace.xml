@@ -4,6 +4,7 @@
     <list default="true" id="5be87736-06a1-4704-ae78-d1ae5a69aab8" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Sites\18642\Task_two\haoy_Mtime\app\assets\images\rails.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Sites\18642\Task_two\haoy_Mtime\app\controllers\.static_pages_controller.rb.swp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
     </list>
     <ignored path="sample_app.iws" />
@@ -44,7 +45,7 @@
       <file leaf-file-name="home.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="20" selection-start="145" selection-end="145" vertical-scroll-proportion="0.15586035">
+            <state line="4" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.12468828">
               <folding />
             </state>
           </provider>
@@ -694,7 +695,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="145" selection-end="145" vertical-scroll-proportion="0.15586035">
+        <state line="4" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.12468828">
           <folding />
         </state>
       </provider>
