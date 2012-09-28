@@ -1,6 +1,6 @@
-# Ruby on Rails Tutorial: sample application
+# Mtime: my individual website
 
-This is the sample application for
-[*Ruby on Rails Tutorial: Learn Rails by Example*](http://railstutorial.org/)
-by [Michael Hartl](http://michaelhartl.com/).
+This is the source code for
+[* Mtime *]()
+by [Hao Yao](http://www.facebook.com/hao.yao.7).
 
