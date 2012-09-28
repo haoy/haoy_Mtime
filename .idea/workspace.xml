@@ -5,11 +5,7 @@
       <change type="DELETED" beforePath="C:\Sites\18642\Task_two\haoy_Mtime\app\assets\images\rails.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Sites\18642\Task_two\haoy_Mtime\app\assets\images\ͼƬ�ߴ�.docx" afterPath="" />
       <change type="DELETED" beforePath="C:\Sites\18642\Task_two\haoy_Mtime\app\controllers\.static_pages_controller.rb.swp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sample_app.iml" afterPath="$PROJECT_DIR$/.idea/sample_app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
     </list>
     <ignored path="sample_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +27,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="22" selection-start="280" selection-end="280" vertical-scroll-proportion="0.44642857">
+            <state line="35" column="2" selection-start="723" selection-end="723" vertical-scroll-proportion="0.6279762">
               <folding />
             </state>
           </provider>
@@ -64,8 +60,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss" />
         <option value="$PROJECT_DIR$/spec/requests/static_pages_spec.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -775,7 +771,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="280" selection-end="280" vertical-scroll-proportion="0.44642857">
+        <state line="35" column="2" selection-start="723" selection-end="723" vertical-scroll-proportion="0.6279762">
           <folding />
         </state>
       </provider>
