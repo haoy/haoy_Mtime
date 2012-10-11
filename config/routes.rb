@@ -1,5 +1,5 @@
-SampleApp::Application.routes.draw do
-  get "users/new"
+Haoymtime::Application.routes.draw do
+  resources :users
 
   root to: 'static_pages#home'
   match '/movies',    to: 'static_pages#movies'
