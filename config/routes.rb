@@ -1,12 +1,15 @@
 Haoymtime::Application.routes.draw do
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
 
   root to: 'static_pages#home'
   match '/movies',    to: 'static_pages#movies'
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
   match '/signup',  to: 'users#new'
-
+  match '/signin', to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
+end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -63,4 +66,3 @@ Haoymtime::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
-end
