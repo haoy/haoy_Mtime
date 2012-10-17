@@ -8,7 +8,7 @@ class StaticPagesController < ApplicationController
   end
 
   def tour
-    @users = User.paginate(page: params[:page], per_page: 10)
+
   end
 
   def contact
