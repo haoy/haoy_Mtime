@@ -1,8 +1,11 @@
 <%= form_for(@movie_comment) do |f| %>
     <%= render 'shared/error_messages', object: f.object %>
     <div class="field">
-      <%= f.text_area :movie, placeholder: "Type in a new movie name...",:cols => "50", :rows => "4" %>
-      <%= f.text_area :comment, placeholder: "Type in your comment..." %>
+      <p>Movie Name</p>
+      <%= f.text_area :movie, placeholder: "Enter a movie name...",:cols => "50", :rows => "4" %>
+      <p>Comments && Quotes</p>
+      <%= f.text_area :comment, placeholder: "Enter your comment or your favorite movie quote ..." %>
     </div>
+
     <%= f.submit "Post", class: "btn btn-large btn-primary" %>
 <% end %>
