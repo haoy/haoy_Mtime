@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121013230751) do
+ActiveRecord::Schema.define(:version => 20121015023232) do
+
+  create_table "movie_comments", :force => true do |t|
+    t.string   "movie"
+    t.string   "comment"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "movie_comments", ["user_id", "created_at"], :name => "index_movie_comments_on_user_id_and_created_at"
 
   create_table "users", :force => true do |t|
     t.string   "name"

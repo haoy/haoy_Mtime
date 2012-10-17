@@ -1,0 +1,16 @@
+<% provide(:title, 'Users Comments')%>
+
+<h1>Users Comments</h1>
+<span style="color:purple;font-weight:bold">
+<p> Join us to create your own profile and share your movie comments with the world!!!
+       (Click usernames to see their movie comments)</p>
+</span>
+<ul class="users">
+  <% @users.each do |user| %>
+      <li>
+        <%= gravatar_for user %>
+        <%= link_to user.name, user %>
+      </li>
+  <% end %>
+</ul>
+

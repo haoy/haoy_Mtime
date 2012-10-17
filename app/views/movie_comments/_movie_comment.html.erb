@@ -1,0 +1,14 @@
+<li>
+  <h7>Movie Name: </h7>
+  <span style="color:#4874DB;font-weight:bold" class="movie"><%= movie_comment.movie %></span>
+  <br>
+  <h7>Comment: </h7>
+  <span style="color:#7C58A8;font-weight:bold" class="comment"><%= movie_comment.comment %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(movie_comment.created_at) %> ago.
+  </span>
+  <% if current_user?(movie_comment.user) %>
+      <%= link_to "delete", movie_comment, method: :delete,
+                  data: { confirm: "100% sure?" } %>
+  <% end %>
+</li>

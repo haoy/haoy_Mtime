@@ -9,4 +9,10 @@ FactoryGirl.define do
       admin true
     end
   end
+
+  factory :movie_comment do
+    movie "Lorem ipsum"
+    comment "Lorem ipsum"
+    user
+  end
 end

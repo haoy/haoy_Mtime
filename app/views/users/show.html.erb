@@ -8,4 +8,13 @@
     </h1>
     </section>
   </aside>
+  <div class="span8">
+    <% if @user.movie_comments.any? %>
+        <h3>Movies Comments (<%= @user.movie_comments.count %>)</h3>
+        <ol class="movie_comments">
+          <%= render @movie_comments %>
+        </ol>
+        <%= will_paginate @movie_comments %>
+    <% end %>
+  </div>
 </div>

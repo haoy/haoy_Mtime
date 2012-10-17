@@ -25,6 +25,8 @@ describe User do
   it { should respond_to(:password_confirmation) }
   it { should respond_to(:remember_token) }
   it { should respond_to(:authenticate) }
+  it { should respond_to(:movie_comments)}
+  it { should respond_to(:feed) }
   it { should respond_to(:admin) }
 
   it { should be_valid }
@@ -109,6 +111,39 @@ describe User do
   describe "remember token" do
     before { @user.save}
     its(:remember_token) { should_not be_blank }
+  end
+
+  describe "movie_comment associations" do
+    before { @user.save }
+    let!(:older_movie_comment) do
+      FactoryGirl.create(:movie_comment, user: @user, created_at: 1.day.ago)
+    end
+    let!(:newer_movie_comment) do
+      FactoryGirl.create(:movie_comment, user: @user, created_at: 1.hour.ago)
+    end
+
+    it "should have the right movie_comments in the right order" do
+      @user.movie_comments.should == [newer_movie_comment, older_movie_comment]
+    end
+
+    it "should destroy associated movie_comments" do
+      movie_comments = @user.movie_comments.dup
+      @user.destroy
+      movie_comments.should_not be_empty
+      movie_comments.each do |movie_comment|
+        MovieComment.find_by_id(movie_comment.id).should be_nil
+      end
+    end
+
+    describe "status" do
+      let(:unfollowed_post) do
+        FactoryGirl.create(:movie_comment, user: FactoryGirl.create(:user))
+      end
+
+      its(:feed) { should include(newer_movie_comment) }
+      its(:feed) { should include(older_movie_comment) }
+      its(:feed) { should_not include(unfollowed_post) }
+    end
   end
 end
 

@@ -56,10 +56,21 @@ describe "UserPages" do
 
   describe "profile page" do
     let(:user) { FactoryGirl.create(:user) }
+    let!(:m1) { FactoryGirl.create(:movie_comment, user: user, movie: "Foo", comment: "Foo") }
+    let!(:m2) { FactoryGirl.create(:movie_comment, user: user, movie: "Bar", comment:"Bar") }
     before { visit user_path(user) }
 
     it { should have_selector('h1',    text: user.name) }
     it { should have_selector('title', text: user.name) }
+
+    describe "movie_comments" do
+      it { should have_content(m1.movie) }
+      it { should have_content(m1.comment) }
+      it { should have_content(m2.movie) }
+      it { should have_content(m2.comment) }
+      it { should have_content(user.movie_comments.count) }
+      it { should have_content(user.movie_comments.count) }
+    end
   end
 
   describe "signup" do

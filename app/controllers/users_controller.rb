@@ -4,6 +4,8 @@ class UsersController < ApplicationController
   before_filter :admin_user,     only: :destroy
   def show
     @user = User.find(params[:id])
+    @movie_comments = @user.movie_comments.paginate(page: params[:page], per_page: 10)
+
   end
 
   def new

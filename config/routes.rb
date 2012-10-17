@@ -1,9 +1,10 @@
 Haoymtime::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :movie_comments, only: [:create, :destroy]
 
   root to: 'static_pages#home'
-  match '/movies',    to: 'static_pages#movies'
+  match '/tour',    to: 'static_pages#tour'
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
   match '/signup',  to: 'users#new'
