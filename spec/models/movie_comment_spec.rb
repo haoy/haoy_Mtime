@@ -36,7 +36,7 @@ describe MovieComment do
   end
 
   describe "with movie that is too long" do
-    before { @movie_comment.movie = "a" * 141 }
+    before { @movie_comment.movie = "a" * 41 }
     it { should_not be_valid }
   end
 
